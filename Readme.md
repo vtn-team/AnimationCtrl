@@ -1,10 +1,15 @@
+## 使用方法
+オブジェクトにつけて、Animatorの参照を設定する  
+Animatorがないと動かないので注意  
+Animatorの位置はスクリプトと同じでなくてもOK  
+
 ## Animatorを非アクティブに(軽くなる)
 ```
 _animation.DisActive();
 ```
-※SerializeFieldの_isActiveStartをfalseにすると、起動時(Startのタイミング)にanimatorは消える  
-　animatorがenableである必要がある操作をしたいときは、Awakeでやるといいかも  
-  ここは派生前提なので、派生先でStartをカジュアルに使えるようにするため、設計を変更するかも  
+※SerializeFieldの_isActiveStartをfalseにすると、起動時(Startのタイミング)にanimatorはUpdateされなくなる
+animatorがenableである必要がある操作をしたいときは、Awakeでやるといいかも  
+ここは派生前提なので、派生先でStartをカジュアルに使えるようにするため、設計を変更するかも  
 
 ## 再生(割込み可)
 ```
