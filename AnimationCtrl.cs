@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 /// <summary>
-/// Animatuin管理+ヘルパクラス
+/// Animation管理+ヘルパクラス
 /// 
 /// NOTE: Motion Blendを使用するものは、適宜派生させること
-/// NOTE: 汎化させるよりは、仕様が同じものをまとめて特化させた方がオーバヘッドが少ないので、そうした方がよい(Player、NPC、Enemy、Bossなど)
+/// NOTE: 汎用化させるよりは、仕様が同じものをまとめて特化させた方がオーバヘッドが少ないので、そうした方がよい(Player、NPC、Enemy、Bossなど)
 /// </summary>
 class AnimationCtrl : MonoBehaviour
 {
